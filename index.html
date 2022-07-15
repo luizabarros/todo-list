@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/img/icones/todolist.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script defer src="./src/js/script.js"></script>
+    <title>My Tasks</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <h1 class="cabecalho-titulo">My Tasks</h1>
+
+            <div class="barra-de-pesquisa">
+                <input type="search" name="tarefa" id="pesquisar" placeholder="Pesquisar tarefa" class="campo-interacao">
+                <input type="submit" id="lupa" value="&#128269;">
+            </div>
+        </div>
+    </header>
+
+    <main class="organizar-tarefas">
+        <div class="container">
+            <section class="inserir-tarefas">
+                <h2 class="inserir-tarefas-titulo">Inserir tarefa</h2>
+       
+                <div class="inserir-tarefas-form">
+                    <input type="text" placeholder="Digitar título da tarefa" class="campo-interacao" id="titulo">
+       
+                    <select name="tipo-tarefa" id="tipo-tarefa" class="campo-interacao" title="Clique para selecionar">
+                        <option value="">Selecionar tipo</option>
+                        <option value="urgente">Urgente</option>
+                        <option value="prioritario">Prioritário</option>
+                        <option value="normal">Normal</option>
+                    </select>
+
+                    <button type="submit" id="adicionar" class="campo-interacao">Adicionar tarefa na lista</button>
+                </div>
+            </section>
+            
+            <section class="tarefas">
+                <h2 class="tarefas-titulo">Tarefas</h2>
+                <ul id="tarefas-lista"></ul>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
