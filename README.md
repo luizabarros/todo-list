@@ -10,4 +10,4 @@ I was challenged to create the following functionalities: search, add and remove
 
 ## 🚀 Starting
 
-To start the project, just click 
+To start the project, just click https://luizabarros.github.io/todo-list/
